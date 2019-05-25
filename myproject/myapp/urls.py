@@ -15,6 +15,6 @@ urlpatterns=[
     url(r'^paypal/',include('paypal.standard.ipn.urls')),
     url(r'^edit$', views.edit_profile,name='edit_profile'),
     url(r'^change_password$', views.change_password,name='change_password'),
-    url(r'^insurance_confirmation$', views.insurance_confirmation,name='insurance_confirmation'),
+    url(r'^pdf$', views.pdf,name='pdf'),
     
 ]
