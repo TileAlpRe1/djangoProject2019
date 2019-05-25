@@ -179,7 +179,10 @@ def change_password(request):
         args = {'user': user}
         return render(request, 'myapp/change_password.html', args)
 
-
+def pdf(request):
+    today = timezone.now()
+    params = {'today': today}
+    return render(request,'myapp/pdf.html',params)
 	
 def user_login(request):
     if request.method == 'POST':
