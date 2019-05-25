@@ -162,7 +162,7 @@ def edit_profile(request):
 	
 
 def insurance_confirmation(request):
-        return redirect(reverse('myapp:view_profile'))	
+        return render(request,'myapp/insurance_confirmation.html')	
 	
 def change_password(request):
     if request.method == 'POST':
